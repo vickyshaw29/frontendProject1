@@ -6,7 +6,8 @@ import img3 from '../img/3.svg'
 import img4 from '../img/4.svg'
 import React, { Fragment } from 'react'
 import Paper from '@material-ui/core/Paper';
-// import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -144,10 +145,10 @@ function Menu() {
                     </div>
                 </div>
                 <Button onClick={(index) => setValue(index => index + 1)} className={classes.btn} variant="contained" color="primary" >
-                   Right
+                <ArrowRightAltIcon/>
                         </Button>
                 <Button onClick={(index)=>setValue(index=>index-1)} className={classes.btn2} variant="contained" color="secondary">
-                    Left
+                    <ArrowBackIcon />
                         </Button>
             </div>
             <Box component="span" m={1} style={{ backgroundColor: "#c0c0c0" }}>
